@@ -2,6 +2,9 @@ import NuxtConfiguration from "@nuxt/config";
 
 const config: NuxtConfiguration = {
   srcDir: "src/",
+  htmlAttrs: {
+    lang: "ja"
+  },
   head: {
     titleTemplate: "nuxt-ts-template",
     meta: [
@@ -21,7 +24,7 @@ const config: NuxtConfiguration = {
       }
     ]
   },
-  modules: []
+  modules: [["@nuxtjs/pwa", { icon: false }]]
 };
 
 export default config;
