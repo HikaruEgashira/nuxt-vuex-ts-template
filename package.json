@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-ts-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "nuxt build",
+    "start": "nuxt build && nuxt start",
+    "dev": "nuxt",
+    "format": "prettier --write \"{,!(node_modules|dist|build|coverage|.nuxt|.serverless)/**/}*.{ts,json,vue,md}\"",
+    "lint": "eslint ./ --ext .ts --ext .vue --ignore-path .gitignore",
+    "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.6.3",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^7.1.0",
+    "vue-eslint-parser": "^6.0.4"
+  },
+  "dependencies": {
+    "nuxt": "^2.8.1",
+    "nuxt-property-decorator": "^2.3.0",
+    "ts-node": "^8.3.0"
+  }
+}

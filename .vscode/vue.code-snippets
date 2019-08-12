@@ -1,0 +1,35 @@
+{
+	"Print to console": {
+		"scope": "Vue",
+		"prefix": "tmpl",
+		"body": [
+			"<template>",
+			"\t<section>$1</section>",
+			"</template>",
+			"",
+			"<script lang=\"ts\">",
+			"import { Component, Vue } from \"nuxt-property-decorator\";",
+			"import * as Vuex from \"vuex\";",
+			"",
+			"@Component({",
+			"\tcomponents: {}",
+			"})",
+			"export default class Index extends Vue {",
+			"\t$store!: Vuex.ExStore;",
+			"",
+			"// data______________________________________________________",
+			"//",
+			"// props______________________________________________________",
+			"//",
+			"// computed______________________________________________________",
+			"//",
+			"// method______________________________________________________",
+			"//",
+			"}",
+			"</script>",
+			"",
+			"<style lang=\"sass\" scoped></style>"
+		],
+		"description": "vueのtsテンプレートの作成"
+	}
+}
