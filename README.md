@@ -1,6 +1,6 @@
 # nuxt + ts template
 
-https://github.com/takefumi-yoshii/ts-nuxtjs-vuexを参考に作成しています。
+https://github.com/takefumi-yoshii/ts-nuxtjs-vuex を参考に作成しています。
 
 ## Development
 
