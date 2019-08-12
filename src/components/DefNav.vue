@@ -65,7 +65,7 @@ export default class Index extends Vue {
 
 /** two */
 .slide-leave-active
-  transition: transform .2s
+  transition: transform .3s
 .slide-leave-to
   transform: translateX(-100vw)
 
