@@ -7,16 +7,13 @@
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
-import * as Vuex from "vuex";
 
 @Component({
   components: {
     "DefNavigation": () => import("~/components/DefNav.vue")
   }
 })
-export default class Index extends Vue {
-  $store!: Vuex.ExStore;
-}
+export default class Index extends Vue {}
 </script>
 
 <style lang="sass" scoped>
