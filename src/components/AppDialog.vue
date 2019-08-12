@@ -1,6 +1,5 @@
 <template>
   <section class="contents">
-
     <transition name="slide">
       <nav class="main" v-if="dialog">
         <slot />
@@ -10,27 +9,25 @@
     <transition name="fade">
       <nav class="back" @click="chDialog()" v-if="dialog"></nav>
     </transition>
-
   </section>
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from "nuxt-property-decorator";
-  import * as Vuex from "vuex";
+import { Component, Vue } from "nuxt-property-decorator";
+import * as Vuex from "vuex";
 
-  @Component
-  export default class Index extends Vue {
-    $store!: Vuex.ExStore;
+@Component
+export default class Index extends Vue {
+  $store!: Vuex.ExStore;
 
-    get dialog(): boolean {
-      return this.$store.getters["visible/dialog"];
-    }
-
-    chDialog(): void {
-      this.$store.commit("visible/chDialog", { bool: false });
-    }
-
+  get dialog(): boolean {
+    return this.$store.getters["visible/dialog"];
   }
+
+  chDialog(): void {
+    this.$store.commit("visible/chDialog", { bool: false });
+  }
+}
 </script>
 
 <style lang="sass" scoped>

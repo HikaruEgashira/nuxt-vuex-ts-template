@@ -10,7 +10,7 @@ import { Component, Vue } from "nuxt-property-decorator";
 
 @Component({
   components: {
-    "DefNavigation": () => import("~/components/DefNav.vue")
+    DefNavigation: () => import("~/components/DefNav.vue")
   }
 })
 export default class Index extends Vue {}
