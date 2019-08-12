@@ -38,7 +38,6 @@
   position: absolute
   left: 10vw
   top: 10vh
-  max-width: 300px
   width: 80vw
   height: 80vh
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25)
